@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="奥斯汀生命河灵粮堂">
-    <meta name="description" content="I am the way, and the truth, and the life. No one comes to the Father except through me.">
+    <meta name="description" content="耶穌說、我就是道路、真理、生命．若不藉著我、沒有人能到父那裡去.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -86,6 +86,7 @@
 
 
 
+    <link rel="stylesheet" href="/css/custom.css">
 
     <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
 
@@ -125,7 +126,7 @@
     
     <a href="/worships" class="waves-effect waves-light">
       
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      <i class="fas fa-cross" style="zoom: 0.6;"></i>
       
       <span>敬拜日程</span>
     </a>
@@ -136,7 +137,7 @@
     
     <a href="/gospels" class="waves-effect waves-light">
       
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      <i class="fas fa-heart" style="zoom: 0.6;"></i>
       
       <span>圣经福音</span>
     </a>
@@ -186,6 +187,14 @@
       <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
     </a>
   </li>
+  <li class="nav-item hide-on-med-and-down">
+    <div class="language-switcher"></div>
+      <a href="/en" class="waves-effect waves-light active">EN</a>
+      <!-- <span>|</span> -->
+      <!-- <span class="lang-sep" aria-hidden="true">|</span> -->
+      <a href="/" class="waves-effect waves-light ">中文</a>
+    </lidiv>
+  </li>
 </ul>
 
 
@@ -198,7 +207,7 @@
         <div class="logo-name">奥斯汀生命河灵粮堂</div>
         <div class="logo-desc">
             
-            I am the way, and the truth, and the life. No one comes to the Father except through me.
+            耶穌說、我就是道路、真理、生命．若不藉著我、沒有人能到父那裡去.
             
         </div>
     </div>
@@ -220,7 +229,7 @@
 	  
 		<a href="/worships" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-bookmark"></i>
+			    <i class="fa-fw fas fa-cross"></i>
 			
 			敬拜日程
 		</a>
@@ -231,7 +240,7 @@
 	  
 		<a href="/gospels" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-bookmark"></i>
+			    <i class="fa-fw fas fa-heart"></i>
 			
 			圣经福音
 		</a>
@@ -284,7 +293,6 @@
 
 
         </div>
-
         
             <style>
     .nav-transparent .github-corner {
@@ -359,7 +367,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                RIVER OF LIFE CHRISTIAN CHURCH IN AUSTIN
+                奥斯汀生命河灵粮堂
                 
             </div>
 
@@ -529,17 +537,17 @@
                         <div class="dream">
     
     <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;传道箴言
+        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;傳道箴言
     </div>
     
     <div class="row">
         <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            每周日早上10:00，严牧师与您相约生命河
+            每週日早上10:00，嚴牧師與您相約生命河
         </div>
     </div>
 
 <div id="player-containter" >
-  <h2>Latest Video from Pastor Stephen & Xiaoyan Yeem</h2>
+  <h2>嚴牧師/師母最新佈道視頻</h2>
   <div id="player"></div>
   <div class="video-title" id="video-title">Loading latest video...</div>
   <div><a id="video-link" href="#" target="_blank"></a></div>
@@ -777,6 +785,8 @@
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             
+                <span id="translate">|&nbsp;繁/简：</span><a id="translateLink" href="javascript:translatePage();">繁</a>
+            
             <br>
             
             
@@ -985,6 +995,17 @@ $(function () {
 
     
 
+    
+        <script type="text/javascript" src="/js/tw_cn.js"></script>
+        <script type="text/javascript">
+          var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
+          var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
+          var cookieDomain = "https://rolaustin.github.io"; //Cookie地址, 一定要设定, 通常为你的网址
+          var msgToTraditionalChinese = "繁"; //此处可以更改为你想要显示的文字
+          var msgToSimplifiedChinese = "简"; //同上，但两处均不建议更改
+          var translateButtonId = "translateLink"; //默认互换id
+          translateInitilization();
+        </script>
     
     
     
